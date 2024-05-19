@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to fill this form</p>
+    </header>
+
+    <form action="" id="survey-form">
+      <div class="personal-info">
+        <label for="name" id="name-label">Name * </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <div class="personal-info">
+        <label for="email" id="email-label">Email * </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="personal-info">
+        <label for="number" id="number-label">Age</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Age"
+          min="13"
+          max="120"
+        />
+      </div>
+
+      <div class="personal-info">
+        <label for="dropdown">Gender</label>
+        <select name="dropdown" id="dropdown">
+          <option value="f">Female</option>
+          <option value="m">Male</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Which one do you prefer?</legend>
+        <input type="radio" name="radio" id="f" value="f" />
+        <label for="f">Front-End Development</label>
+        <input type="radio" name="radio" id="b" value="b" />
+        <label for="b">Back-End Development</label>
+      </fieldset>
+
+      <fieldset id="checkbox">
+        <legend>Select the ones you are proficient in?</legend>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="html" value="html" />
+          <label for="html">HTML</label>
+          <input type="checkbox" name="checkbox" id="css" value="css" />
+          <label for="css">CSS</label>
+          <input type="checkbox" name="checkbox" id="js" value="js" />
+          <label for="js">JavaScript</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="react" value="react" />
+          <label for="react">React</label>
+          <input type="checkbox" name="checkbox" id="node" value="node" />
+          <label for="node">Node.js</label
+          ><input type="checkbox" name="checkbox" id="npm" value="npm" />
+          <label for="npm">NPM</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="express" value="express" />
+          <label for="express">Express.js</label>
+          <input type="checkbox" name="checkbox" id="jquery" value="jquery" />
+          <label for="jquery">jQuery</label>
+          <input type="checkbox" name="checkbox" id="webpack" value="webpack" />
+          <label for="webpack">Webpack</label>
+        </div>
+        <div class="checkbox">
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="bootstrap"
+            value="bootstrap"
+          />
+          <label for="bootstrap">Bootstrap</label>
+          <input type="checkbox" name="checkbox" id="sass" value="sass" />
+          <label for="sass">Sass</label>
+          <input type="checkbox" name="checkbox" id="sql" value="sql" />
+          <label for="sql">SQL</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="mongo" value="mongo" />
+          <label for="mongo">MongoDB</label>
+          <input type="checkbox" name="checkbox" id="git" value="git" />
+          <label for="git">Git</label>
+          <input type="checkbox" name="checkbox" id="github" value="github" />
+          <label for="github">GitHub</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="heroku" value="heroku" />
+          <label for="heroku">Heroku</label>
+          <input type="checkbox" name="checkbox" id="aws" value="aws" />
+          <label for="aws">AWS</label>
+          <input type="checkbox" name="checkbox" id="vscode" value="vscode" />
+          <label for="vscode">Visual Studio Code</label>
+        </div>
+      </fieldset>
+
+      <textarea
+        name="add-comments"
+        id="add-comments"
+        placeholder="Additional comments..."
+        rows="10"
+      ></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
