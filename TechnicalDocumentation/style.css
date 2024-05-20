@@ -1,0 +1,101 @@
+html {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+}
+#navbar {
+  width: 20%;
+  background-color: #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+}
+#navbar header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#navbar a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+}
+main {
+  width: 60%;
+  padding: 0 40px;
+  margin: 40px auto;
+  border: 4px solid black;
+  box-shadow: 0 0 30px black;
+}
+section {
+  margin-bottom: 100px;
+}
+section header {
+  font-size: 30px;
+}
+h3 {
+  font-size: 20px;
+}
+section header,
+h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+li,
+p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+pre {
+  width: 60%;
+  margin: 0 auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+@media (max-width: 768px) {
+  body {
+    margin: 40px 0;
+    width: 100%;
+  }
+  #navbar {
+    width: 80%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-right: none;
+    border-bottom: 1px solid #f4f4f4;
+  }
+  #navbar header {
+    display: none;
+  }
+  #navbar a {
+    font-size: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  main {
+    width: 80%;
+    padding: 0;
+    margin: 40px 0;
+    border: none;
+    box-shadow: none;
+    font-size: 10px;
+  }
+  pre {
+    width: 100%;
+    border: none;
+  }
+}

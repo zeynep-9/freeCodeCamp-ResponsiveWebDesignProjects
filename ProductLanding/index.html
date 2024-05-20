@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
+        alt="ChatGPT logo"
+        id="header-img"
+      />
+      <nav id="nav-bar">
+        <a href="#info" class="nav-link">General Info</a>
+        <a href="#video" class="nav-link">Video</a>
+        <a href="#form" class="nav-link">Newsletter</a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="info">
+        <div class="info">
+          <h6>General Information</h6>
+          <p>
+            GPT-4o ("GPT-4 Omni") is a multilingual, multimodal generative
+            pre-trained transformer designed by OpenAI. It was announced by
+            OpenAI's CTO Mira Murati during a live-streamed demo on 13 May 2024
+            and released the same day. GPT-4o is free, but with a usage limit
+            that is 5 times higher for ChatGPT Plus subscribers. It can process
+            and generate text, images and audio. Its API is twice as fast and
+            half the price of its predecessor, GPT-4 Turbo.
+          </p>
+          <h6>Background</h6>
+          <p>
+            GPT-4o was originally shadow launched on the Large Model Systems
+            Organization (LMSYS) as 3 different models. These 3 models were
+            called gpt2-chatbot, im-a-good-gpt2-chatbot, and
+            im-also-a-good-gpt2-chatbot. On 7 May 2024, Sam Altman tweeted
+            "im-a-good-gpt2-chatbot", which was commonly interpreted as a
+            confirmation that these were new OpenAI models being A/B tested.
+          </p>
+        </div>
+        <div class="info">
+          <h6>Capabilities</h6>
+          <p>
+            GPT-4o achieved state-of-the-art results in voice, multilingual, and
+            vision benchmarks, setting new records in audio speech recognition
+            and translation. GPT-4o scored 88.7 on the Massive Multitask
+            Language Understanding (MMLU) benchmark compared to 86.5 by GPT-4.
+            Unlike GPT-3.5 and GPT-4, which rely on other models to process
+            sound, GPT-4o natively supports voice-to-voice, making the response
+            nearly instant and seamless. Sam Altman noted on 15 May 2024 that
+            GPT-4o's voice-to-voice capabilities were not yet integrated into
+            ChatGPT, and that the old version was still being used.
+          </p>
+          <p>
+            The model supports over 50 languages, which OpenAI claims cover over
+            97% of speakers. Mira Murati demonstrated the model's multilingual
+            capability by speaking Italian to the model and having it translate
+            between English and Italian during the live-streamed OpenAI demo
+            event on 13 May 2024. In addition, the new tokenizer uses fewer
+            tokens for certain languages, especially languages that are not
+            based on the Latin alphabet, making it cheaper for those languages.
+          </p>
+          <p>
+            GPT-4o has knowledge up to October 2023 and has a context length of
+            128k tokens with output token limit capped to 2048. As of May 2024,
+            it is the leading model in the Large Model Systems Organization
+            (LMSYS) Elo Arena Benchmarks by the University of California,
+            Berkeley.
+          </p>
+        </div>
+      </div>
+      <div id="video-and-news">
+        <div>
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/DQacCB9tDaw?si=ONd7Hr2lW8t4o1kR"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <label for="email"
+              >Subscribe to our newsletter to stay in touch!</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+            />
+            <input id="submit" type="submit" value="Get Started" />
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

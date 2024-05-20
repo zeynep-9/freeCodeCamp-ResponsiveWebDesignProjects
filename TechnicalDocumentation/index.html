@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Development</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Full-Stack Web Development Documentation</header>
+      <a href="#HTML" class="nav-link">HTML</a>
+      <a href="#CSS" class="nav-link">CSS</a>
+      <a href="#JavaScript" class="nav-link">JavaScript</a>
+      <a href="#Front-End_Web_Development" class="nav-link"
+        >Front-End Web Development</a
+      >
+      <a href="#Back-End_Web_Development" class="nav-link"
+        >Back-End Web Development</a
+      >
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="HTML">
+        <header>HTML</header>
+        <ul>
+          <li>
+            HyperText Markup Language (HTML) is the standard markup language for
+            documents designed to be displayed in a web browser. It defines the
+            content and structure of web content. It is often assisted by
+            technologies such as Cascading Style Sheets (CSS) and scripting
+            languages such as JavaScript.
+          </li>
+          <li>
+            Web browsers receive HTML documents from a web server or from local
+            storage and render the documents into multimedia web pages. HTML
+            describes the structure of a web page semantically and originally
+            included cues for its appearance.
+          </li>
+          <li>
+            HTML elements are the building blocks of HTML pages. With HTML
+            constructs, images and other objects such as interactive forms may
+            be embedded into the rendered page.
+          </li>
+          <li>
+            HTML provides a means to create structured documents by denoting
+            structural semantics for text such as headings, paragraphs, lists,
+            links, quotes, and other items.HTML elements are delineated by tags,
+            written using angle brackets. Tags such as &lt;img&gt; and
+            &lt;input&gt; directly introduce content into the page. Other tags
+            such as &lt;p&gt; and &lt;/p&gt; surround and provide information
+            about document text and may include sub-element tags. Browsers do
+            not display the HTML tags but use them to interpret the content of
+            the page.
+          </li>
+          <li>
+            HTML can embed programs written in a scripting language such as
+            JavaScript, which affects the behavior and content of web pages. The
+            inclusion of CSS defines the look and layout of content. The World
+            Wide Web Consortium (W3C), former maintainer of the HTML and current
+            maintainer of the CSS standards, has encouraged the use of CSS over
+            explicit presentational HTML since 1997. A form of HTML, known as
+            HTML5, is used to display video and audio, primarily using the
+            &lt;canvas&gt; element, together with JavaScript.
+          </li>
+        </ul>
+        <h3>Markup</h3>
+        <code>
+          <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+              &lt;title&gt;This is a title&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;div&gt;
+                &lt;p&gt;Hello world!&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </pre>
+        </code>
+      </section>
+      <section class="main-section" id="CSS">
+        <header>CSS</header>
+        <ul>
+          <li>
+            Cascading Style Sheets (CSS) is a style sheet language used for
+            specifying the presentation and styling of a document written in a
+            markup language such as HTML or XML (including XML dialects such as
+            SVG, MathML or XHTML).
+          </li>
+          <li>
+            CSS is designed to enable the separation of content and
+            presentation, including layout, colors, and fonts. This separation
+            can improve content accessibility; provide more flexibility and
+            control in the specification of presentation characteristics; enable
+            multiple web pages to share formatting by specifying the relevant
+            CSS in a separate .css file, which reduces complexity and repetition
+            in the structural content; and enable the .css file to be cached to
+            improve the page load speed between the pages that share the file
+            and its formatting.
+          </li>
+          <li>
+            Separation of formatting and content also makes it feasible to
+            present the same markup page in different styles for different
+            rendering methods, such as on-screen, in print, by voice (via
+            speech-based browser or screen reader), and on Braille-based tactile
+            devices. CSS also has rules for alternate formatting if the content
+            is accessed on a mobile device.
+          </li>
+          <li>
+            The name cascading comes from the specified priority scheme to
+            determine which declaration applies if more than one declaration of
+            a property match a particular element. This cascading priority
+            scheme is predictable.
+          </li>
+        </ul>
+        <h3>Syntax</h3>
+        <code>
+          <pre>
+            body {
+                overflow: hidden;
+                background-color: #000000;
+                background-image: url(images/bg.gif);
+                background-repeat: no-repeat;
+                background-position: left top;
+            }
+            </pre
+          >
+        </code>
+      </section>
+      <section class="main-section" id="JavaScript">
+        <header>JavaScript</header>
+        <p>
+          JavaScript, often abbreviated as JS, is a programming language and
+          core technology of the Web, alongside HTML and CSS. 99% of websites
+          use JavaScript on the client side for webpage behavior.
+        </p>
+        <p>
+          Web browsers have a dedicated JavaScript engine that executes the
+          client code. These engines are also utilized in some servers and a
+          variety of apps. The most popular runtime system for non-browser usage
+          is Node.js.
+        </p>
+        <p>
+          JavaScript is a high-level, often just-in-time compiled language that
+          conforms to the ECMAScript standard. It has dynamic typing,
+          prototype-based object-orientation, and first-class functions. It is
+          multi-paradigm, supporting event-driven, functional, and imperative
+          programming styles. It has application programming interfaces (APIs)
+          for working with text, dates, regular expressions, standard data
+          structures, and the Document Object Model (DOM).
+        </p>
+        <p>
+          The ECMAScript standard does not include any input/output (I/O), such
+          as networking, storage, or graphics facilities. In practice, the web
+          browser or other runtime system provides JavaScript APIs for I/O.
+        </p>
+        <h3>Syntax</h3>
+        <code>
+          <pre>
+    // Declares a function-scoped variable named `x`,
+    // and implicitly assigns the special value
+    // `undefined` to it. Variables without
+    // value are automatically set to undefined.
+    // var is generally considered bad practice and
+    // let and const are usually preferred.
+    var x;
+            </pre
+          >
+        </code>
+        <code>
+          <pre>
+    // Variables can be manually
+    // set to `undefined` like so
+    let x2 = undefined;
+            </pre
+          >
+        </code>
+        <code>
+          <pre>
+    // Declares a block-scoped variable named `y`,
+    // and implicitly sets it to `undefined`. The `let`
+    // keyword was introduced in ECMAScript 2015.
+    let y = 2;
+            </pre
+          >
+        </code>
+        <code>
+          <pre>
+    // Declares a block-scoped, un-reassignable var
+    // named `z`, and sets it to a string literal.
+    // The `const` keyword was introduced in ECMAScript
+    // 2015 and must be explicitly assigned to.
+
+    // The keyword `const` means constant, hence 
+    // the variable cannot be reassigned as
+    // the value is `constant`.
+    const z = "this value cannot be reassigned!";
+            </pre
+          >
+        </code>
+      </section>
+      <section class="main-section" id="Front-End_Web_Development">
+        <header>Front-End Web Development</header>
+        <p>
+          Front-end development primarily focuses on user experience. Using the
+          related coding and design techniques, you as front-end developers
+          build the elements of an application that are directly accessed by
+          end-users with a goal of rendering the entire interface elegant, easy
+          to use, fast, and secure, fostering user engagement and interaction.
+        </p>
+        <p>
+          As part of creating an engaging user interface, front end app
+          development often focus on specific design elements such as text
+          colors and styles, images, graphs and tables, buttons, and overall
+          color schemes. These elements play a crucial role in enhancing the
+          visual appeal and user-friendliness of the application.
+        </p>
+        <p>
+          Front end app development encompasses various interactive elements
+          like sliders, pop-up forms, and custom interactive maps. An essential
+          part of a front end application are navigational menus, which guide
+          users through the application, enhancing their overall experience and
+          interaction with the website or application. The creation of intuitive
+          and user-friendly navigational menus is a key skill for front-end
+          developers.
+        </p>
+        <p>
+          Front-end developers require a specific set of skills to effectively
+          create user interfaces. This includes proficiency in coding languages
+          like HTML, CSS, and JavaScript, as well as a strong understanding of
+          CSS preprocessors such as Sass and Less. In terms of career
+          requirements, aspiring front-end developers often pursue a degree in
+          Computer Science or a related field, although this is not always a
+          mandatory requirement. A strong foundational understanding and
+          proficiency in coding languages such as HTML, CSS, JavaScript, and
+          increasingly, jQuery, are essential.
+        </p>
+        <p>
+          Additionally, an understanding of server-side CSS processing
+          techniques and their applications in web development is beneficial. In
+          terms of CSS, front-end developers must also be adept at styling text,
+          including choosing appropriate colors and styles to ensure readability
+          and enhance user engagement. They should also be skilled in
+          TypeScript, a superset of JavaScript, which adds static typing
+          abilities to the language.
+        </p>
+        <p>
+          Thanks to the latest design and technology trends geared for the front
+          end, you can build increasingly more sophisticated designs and
+          interaction patterns. Simultaneously, however, more complexity
+          results, so much so that front-end web development has become a
+          specialized field that requires deep expertise.
+        </p>
+        <p>
+          Front end applications, also known as the “client side” of an
+          application, are what users see and interact with. They differ from
+          the backend, which is like the hidden machinery behind the scenes. In
+          this context, APIs act as translators, ensuring seamless communication
+          between the visually rich front-end and the complex backend.
+        </p>
+        <p>
+          The major trend in front-end development in recent years is the growth
+          of applications for mobile and smart devices, with users accessing
+          applications from a growing number of devices with different screen
+          sizes and interaction options. As a result, front-end developers must
+          ensure their application delivers a consistent, high-quality user
+          experience for all devices and usage scenarios. That’s a daunting
+          challenge.
+        </p>
+      </section>
+      <section class="main-section" id="Back-End_Web_Development">
+        <header>Back-End Web Development</header>
+        <p>
+          Back-end development means working on server-side software, which
+          focuses on everything you can’t see on a website. Back-end developers
+          ensure the website performs correctly, focusing on databases, back-end
+          logic, application programming interface (APIs), architecture, and
+          servers. They use code that helps browsers communicate with databases,
+          store, understand, and delete data.
+        </p>
+        <p>
+          On a team, back-end developers collaborate with front-end developers,
+          product managers, principal architects, and website testers to build
+          the structure of a website or mobile app. Back-end developers must be
+          familiar with many kinds of tools and frameworks, including languages
+          such as Python, Java, and Ruby. They make sure the back-end performs
+          quickly and responsively to front-end user requests.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
