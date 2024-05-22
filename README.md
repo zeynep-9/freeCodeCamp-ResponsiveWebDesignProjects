@@ -1,1 +1,1 @@
-<img src="https://raw.githubusercontent.com/zeynep-9/freeCodeCamp-ResponsiveWebDesignProjects/main/SurveyForm/ss.png" width="500px">
+<img src="https://raw.githubusercontent.com/zeynep-9/freeCodeCamp-ResponsiveWebDesignProjects/main/SurveyForm/ss.png" width="1000px">
