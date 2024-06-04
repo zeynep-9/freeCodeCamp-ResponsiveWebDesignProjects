@@ -26,3 +26,9 @@
 <img src="https://raw.githubusercontent.com/zeynep-9/freeCodeCamp-ResponsiveWebDesignProjects/main/ProductLanding/ss-mobile.png" width="500px">
 
 ---
+
+*Personal Portfolio Page*
+
+<img src="https://raw.githubusercontent.com/zeynep-9/freeCodeCamp-ResponsiveWebDesignProjects/main/PersonalPortfolio/ss.png" width="1000px">
+
+---
